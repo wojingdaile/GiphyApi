@@ -10,6 +10,9 @@
 		D20027AD1BDF5E04008F96C4 /* GiphyApi.h in Headers */ = {isa = PBXBuildFile; fileRef = D20027AC1BDF5E04008F96C4 /* GiphyApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D20027B41BDF5E04008F96C4 /* GiphyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20027A91BDF5E04008F96C4 /* GiphyApi.framework */; };
 		D20027B91BDF5E04008F96C4 /* GiphyApiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20027B81BDF5E04008F96C4 /* GiphyApiTests.m */; };
+		D20027C51BDF602E008F96C4 /* Giphy.h in Headers */ = {isa = PBXBuildFile; fileRef = D20027C31BDF602E008F96C4 /* Giphy.h */; };
+		D20027C61BDF602E008F96C4 /* Giphy.m in Sources */ = {isa = PBXBuildFile; fileRef = D20027C41BDF602E008F96C4 /* Giphy.m */; };
+		D20027C81BDF6277008F96C4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20027C71BDF6277008F96C4 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		D20027B31BDF5E04008F96C4 /* GiphyApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphyApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20027B81BDF5E04008F96C4 /* GiphyApiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiphyApiTests.m; sourceTree = "<group>"; };
 		D20027BA1BDF5E04008F96C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20027C31BDF602E008F96C4 /* Giphy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Giphy.h; path = Giphy/Giphy.h; sourceTree = "<group>"; };
+		D20027C41BDF602E008F96C4 /* Giphy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Giphy.m; path = Giphy/Giphy.m; sourceTree = "<group>"; };
+		D20027C71BDF6277008F96C4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20027C81BDF6277008F96C4 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +60,7 @@
 		D200279F1BDF5E04008F96C4 = {
 			isa = PBXGroup;
 			children = (
+				D20027C71BDF6277008F96C4 /* CFNetwork.framework */,
 				D20027AB1BDF5E04008F96C4 /* GiphyApi */,
 				D20027B71BDF5E04008F96C4 /* GiphyApiTests */,
 				D20027AA1BDF5E04008F96C4 /* Products */,
@@ -73,6 +81,8 @@
 			children = (
 				D20027AC1BDF5E04008F96C4 /* GiphyApi.h */,
 				D20027AE1BDF5E04008F96C4 /* Info.plist */,
+				D20027C31BDF602E008F96C4 /* Giphy.h */,
+				D20027C41BDF602E008F96C4 /* Giphy.m */,
 			);
 			path = GiphyApi;
 			sourceTree = "<group>";
@@ -93,6 +103,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20027C51BDF602E008F96C4 /* Giphy.h in Headers */,
 				D20027AD1BDF5E04008F96C4 /* GiphyApi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20027C61BDF602E008F96C4 /* Giphy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +386,7 @@
 				D20027BF1BDF5E05008F96C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20027C01BDF5E05008F96C4 /* Build configuration list for PBXNativeTarget "GiphyApiTests" */ = {
 			isa = XCConfigurationList;
@@ -382,6 +395,7 @@
 				D20027C21BDF5E05008F96C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
